@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Números Defectivos</title>
+    <script src="js\f.js"></script>
+</head>
+<body>
+	<script>
+		// Hacer un programa que muestre mediante una función llamada function EsDefectivo ( n) muestre el listado de los números defectivos hasta el número ingresado
+		let num = parseInt(prompt("Ingrese un número: "));
+
+			for (let i = 1; i <= num; i++) {
+				if (EsDefectivo(i)) {
+					document.write("El numero " + i + " Es deficiente"+ "<br>");
+				}
+			}
+
+	</script>
+</body>
+</html>
