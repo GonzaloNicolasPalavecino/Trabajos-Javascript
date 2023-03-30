@@ -12,9 +12,11 @@
           }
         }
 
+            
+            let mensaje;
         if (exclamaciones > letras) {
-          return "ESGRITO";
+          mensaje =  "ESGRITO";
         } else {
-          return "escrito";
+          mensaje =  "escrito";
         }
       }
