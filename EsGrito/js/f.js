@@ -20,3 +20,4 @@
           mensaje =  "escrito";
         }
       }
+return mensaje;
