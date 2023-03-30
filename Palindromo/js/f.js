@@ -8,7 +8,7 @@ function verificarPalindromo() {
         for (var i = 0; i < frase.length / 2; i++) {
           if (frase[i] != frase[frase.length - i - 1]) {
             esPalindromo = false;
-            break;
+           
           }
         }
 
