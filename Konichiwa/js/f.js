@@ -17,6 +17,7 @@ for (var i = 1; i <= numNombres; i++) {
 			}
 			
 			
-			document.write("Konnichi wa, " + nombreJapones + "-san<br>");
-		}
+		     resultado += "Konnichi wa, " + nombreJapones + "-san<br>";
+    }
+    return resultado;
 }
