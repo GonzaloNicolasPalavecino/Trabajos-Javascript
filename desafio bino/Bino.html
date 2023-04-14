@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Desafio de Bino</title>
+  </head>
+  <body>
+    <script src="js\f.js"></script>
+    <script>
+      //Mostrar la cantidad de múltiplos de 2, 3, 4 y 5 en la lista.
+      let lista = prompt("Ingrese los numeros separados por espacios:");
+      let numeros = lista.split(" ").map(Number);
+      
+      let multiplosDe2 = ContarMultiplosde2(numeros);
+      let multiplosDe3 = ContarMultiplosde3(numeros);
+      let multiplosDe4 = ContarMultiplosde4(numeros);
+      let multiplosDe5 = ContarMultiplosde5(numeros);
+      
+      document.write(multiplosDe2 + " Multiplos de 2<br>");
+      document.write(multiplosDe3 + " Multiplos de 3<br>");
+      document.write(multiplosDe4 + " Multiplos de 4<br>");
+      document.write(multiplosDe5 + " Multiplos de 5");
+	  
+    </script>
+  </body>
+</html>
