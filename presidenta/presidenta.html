@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Números de la Presidenta</title>
+	<script src="js\f.js"></script>
+  </head>
+  <body>
+    <script>
+     //Todos los enteros (en un vector) entre a y b (incluidos a y b), que satisfacen las condiciones mencionadas en la declaración, separados por un solo espacio.
+
+      let a = parseInt(prompt("Introduzca el valor de a:"));
+      let b = parseInt(prompt("Introduzca el valor de b:"));
+      let numeros = NumerosPresidenta(a, b);
+	  
+      document.write("Los números entre " + a + " y " + b + " que satisfacen las condiciones son: " + numeros.join(", "));
+	  
+    </script>
+  </body>
+</html>
