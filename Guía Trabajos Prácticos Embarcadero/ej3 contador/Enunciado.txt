@@ -1,0 +1,15 @@
+StrToInt y InttoStr: Son funciones que convierten un valor de numérico entero (Integer) a texto (String) y viceversa
+? Recupera el ejercicio anterior.
+? Cambia el texto (propiedad caption) del botón por: 0
+? Añade un segundo botón a la ventana formulario desde la paleta
+Tool palette – sección Standard: Tbutton
+Al botón 2 cambia el texto (propiedad caption) por Contar
+Pulsa doble clic encima de él, para abrir la ventana de código.
+Entre las llaves { } debes escribir el código:
+Button1->Caption= Button1->Caption +1;
+Si lo ejecutas (run), verás cuenta mal porque añade la letra 1 pero no suma el número 1
+Para ello hay que convertir las letras en números enteros: string to integer o abreviado: StrToInt
+Button1->Caption = StrToInt(Button1->Caption) +1;
+Si ahora lo ejecutas, verás que ya funciona.
+? Si funciona correctamente, guarda la aplicación: File – Save Project as.. El archivo de proyecto se llamará Contador.
+? File – Save as...Guarda la unidad como: Contador1.cpp

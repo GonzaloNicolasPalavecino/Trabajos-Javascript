@@ -1,0 +1,21 @@
+Ejercicio 2:
+? Abre el proyecto anterior Clase0cpp.
+? Desde la Tool palette, añade al ejercicio anterior un
+componente TEdit y un componente TLabel con las
+propiedades de la imagen:
+? Cambiar el evento: OnClick del botón Button1 por:
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+ShowMessage("Hola, " + Edit1->Text + ".");
+}
+ShowMessage es una función que sirve para mostrar una ventana
+de mensaje
+Guarda el proyecto con el nombre: ClaseunoCpp
+Ampliación llamadas a cuadros de diálogo:
+Puedes hacer llamadas a cuadros de diálogo de la API de Windows usando: Application->MessageBox
+Si añades la línea:
+Application->MessageBox(L"¿Desea continuar?", L"Pregunta", MB_OKCANCEL); //con L si es Unicode
+Application->MessageBox("¿Desea continuar?", "Pregunta", MB_OKCANCEL); //sin L si no es Unicode
+
+Dispones de las variantes: MB_OK - MB_OKCANCEL- MB_ABORTRETRYIGNORE- MB_YESNOCANCEL- MB_YESNO-
+MB_RETRYCANCEL- MB_HELP

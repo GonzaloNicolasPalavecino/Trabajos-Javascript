@@ -1,0 +1,15 @@
+Crear una nueva aplicación VCL (librería visual C para Windows) escogiendo del menú: File  New  VCL Form
+Applicaton C++ Builder.
+ En un formulario nuevo, desde la Tool palette, añade un
+componente TButton (botón Button1). Desde el panel de
+propiedades, cambia su propiedad Caption por: Aceptar
+Pulsa doble clic sobre el botón e introduce el código (en el
+evento OnClic del botón Button1) por:
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+Button1->Caption="Vale";
+ShowMessage ("Hola mundo");
+}
+(Importante escribir “Button” con la 1a letra en mayúsculas, ya que C++ distingue mayúsculas de minúsculas)
+ Prueba la aplicación pulsando en Run ?.
+ Si funciona correctamente, guarda la aplicación: File ? Save all . El archivo de proyecto se llamará Clase0cpp.
