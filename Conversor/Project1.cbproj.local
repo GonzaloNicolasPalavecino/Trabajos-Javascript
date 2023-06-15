@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/04/08 16:55:29.000.517,=d:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/04/08 16:55:31.000.825,=d:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/05/18 17:50:31.000.628,=d:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/05/18 17:50:33.000.662,=d:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/06/09 17:54:18.624,=d:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/06/09 17:54:24.271,=d:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/06/09 18:43:28.843,F:\embarcadero tp\Conversor\Unit1.cpp=d:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/06/09 18:43:28.843,F:\embarcadero tp\Conversor\Unit1.dfm=d:\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/06/09 18:43:28.843,F:\embarcadero tp\Conversor\Unit1.h=d:\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2023/06/09 18:43:49.908,F:\embarcadero tp\Conversor\Project1PCH1.h=d:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/06/09 18:43:52.881,F:\embarcadero tp\Conversor\Project1.cbproj=d:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

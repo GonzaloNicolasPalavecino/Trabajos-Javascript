@@ -1,0 +1,26 @@
+Ejercicio 4: Conversor
+Teoría previa:
+? StrToInt y InttoStr: Son funciones que convierten un valor de numérico entero (integer) a texto y viceversa
+? FloatToStr y StrToFloat: Convierten un valor de numérico decimal flotante (float) a texto y viceversa
+? Sender: Es un parámetro que indica el nombre del objeto que ha desencadenado el evento
+Ejercicio:
+? Crear una nueva aplicación VCL (librería visual c para windows) escogiendo
+del menú: File - New – VCL Form Applicaton C++ Builder.
+? En el formulario nuevo, desde la Tool palette, añade: 2 edits, 1 botón y 3
+labels
+? Cambia la propiedad caption de las label y del botón para que muestre el
+texto de la imagen.?
+? Pulsa doble clic encima del botón para llamar al evento (on click)
+void __fastcall TForm1::Button1Click(TObject *Sender) y escribe:
+Edit2->Text=Edit1->Text * 1.3;
+Si no funciona correctamente escribe en su lugar:
+Edit2->Text=StrToInt(Edit1->Text) * 1.3;
+? Si funciona correctamente, guarda toda la aplicación: Fila – Save all
+El archivo de proyecto se llamará Conversor y la unidad: Conversor1.cpp
+Usar dos botones con la misma función (usando el parámetro sender)
+Añade un segundo botón Button2 como en la imagen. ?
+En el código del botón Button1 cambia el código por el del recuadro.
+
+? En el evento onclick del botón 2 tienes que asignar el mismo evento que el del botón 1 para que ambos botones
+llamen a la misma función.
+? Si funciona correctamente, guarda toda la aplicación: Fila – Save all.
