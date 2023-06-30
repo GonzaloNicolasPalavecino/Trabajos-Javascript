@@ -25,7 +25,18 @@ class Contraseña {
   }
 }
 
-let contraseña1 = new Contraseña(); 
-console.log('Contraseña generada:', contraseña1.contraseña);
-console.log('Es fuerte:', contraseña1.esFuerte());
 
+
+const formulario = document.getElementById('formulario');
+formulario.addEventListener('submit', function(event) 
+
+ {
+  event.preventDefault();
+
+	let contraseña1 = new Contraseña(); 
+
+  const mostrarDatos = document.getElementById('mostrarDatos');
+  document.write('Contraseña generada:', contraseña1.contraseña + " <br>");
+  document.write('Es fuerte:', contraseña1.esFuerte());
+ }
+);
