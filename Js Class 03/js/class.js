@@ -60,7 +60,7 @@
       const altura = parseFloat(document.getElementById('altura').value);
 
       const persona = new CPersona(nombre, fechaNacimiento, dni, genero, peso, altura);
-       const gnro = persona.comprobarGenero()
+       const gnro = persona.comprobarGenero();
        const imc = persona.calcularIMC();
        const esMayor = persona.esMayorDeEdad();
 
