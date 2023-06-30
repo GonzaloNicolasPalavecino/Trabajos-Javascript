@@ -3,7 +3,7 @@
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.dni = dni;
-        this.genero =  this.genero;
+        this.genero =  genero;
         this.peso = peso;
         this.altura = altura;
       }
