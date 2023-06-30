@@ -3,9 +3,10 @@
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.dni = dni;
-        this.genero =  genero;
+        this.genero =  this.genero;
         this.peso = peso;
         this.altura = altura;
+
       }
 
       calcularIMC() {
@@ -14,11 +15,11 @@
   var imc = Math.round(this.peso / (this.altura * this.altura));
 
   if (imc < 20) {
-    return -1; //peso bajo
+    this.imc =  -1; //peso bajo
   } else if (imc >= 20 && imc <= 25) {
-    return 0; // buen peso
+    this.imc = 0; // buen peso
   } else {
-    return 1; //sobre peso
+    this.imc = 1; //sobre peso
   }
 }
 
@@ -35,11 +36,11 @@
 
 	comprobarGenero(genero) {
  	 if (this.genero == 'H') {
- 	   return "Hombre"; 
+ 	   this.gnro = "Hombre"; 
   	} else if (this.genero == 'M') {
-  	  return "Mujer"; 
+  	  this.gnro = "Mujer"; 
   	} else if (this.genero == 'X') {
- 	   return "No Binario";
+ 	   this.gnro = "No Binario";
  	 } else {
  	   return false;
  	 }
@@ -60,9 +61,19 @@
       const altura = parseFloat(document.getElementById('altura').value);
 
       const persona = new CPersona(nombre, fechaNacimiento, dni, genero, peso, altura);
-       const gnro = persona.comprobarGenero();
-       const imc = persona.calcularIMC();
        const esMayor = persona.esMayorDeEdad();
+       let imc;
+       let gnro;
+	   
+	   persona.calcularIMC();
+	   imc = persona.imc;
+	   
+	   persona.comprobarGenero();
+	   gnro = persona.comprobarGenero();
+       
+	   
+	  
+
 
       const mostrarDatos = `Nombre: ${nombre} <br> Fecha de Nacimiento: ${fechaNacimiento}<br> DNI: ${dni}<br> Genero: ${gnro}<br> Peso: ${peso} kg<br> Altura: ${altura} m<br> IMC: ${imc}<br> Es mayor de edad: ${esMayor ? 'Sí' : 'No'}`;
       const datosPersona = document.getElementById('datosPersona');
