@@ -1,33 +1,28 @@
 class CEmpleado {
   constructor(nombre, antiguedad, direccion) {
     this.nombre = nombre;
-    this.antiguedad = 2014;
-    this.direccion = "64C- WallStreet";
-  }
-  AñosdeServicio(){
-  var Antiguedad = new date();
-    var año actual = actual.getFullYear();
-    var diferencia = actual.getFullYear() - Antiguedad.getFullYear();
-
-    return diferencia
+    this.antiguedad = antiguedad;
+    this.direccion = direccion;
   }
 
-  viveEn(direccion){
-    if(this.direccion = "64C- WallStreet"){
-     return "Vive en WallStreet";
-    }else {
-     return "No vive en WallStreet";
+  AñosdeServicio() {
+    var añoActual = new Date().getFullYear();
+    var diferencia = añoActual - this.antiguedad;
+    return diferencia;
+  }
+
+  viveEn() {
+    if (this.direccion.includes("WallStreet")) {
+      this.mdireccion = "Vive en WallStreet";
+    } else {
+      this.mdireccion = "No vive en WallStreet";
     }
   }
-  
 }
 
-const empleado1 = new CEmpleado(nombre, antiguedad, direccion);
-const localidad = empleado1.ViveEn();
-const YearsOld = empleado1.AñosdeServicio()
+const empleado1 = new CEmpleado("John Doe", 2014, "5928 WallStreet");
+empleado1.viveEn();
 
-const mostrarDatos = `Nombre: ${nombre} <br> Localidad: ${direccion} <br> ${localidad} <br> Cantidad de años en servicio: ${YearsOld} <br> Esta en la comanpania desde : ${direccion} `;
-
-
+const mostrarDatos = `Años de antigüedad: ${empleado1.AñosdeServicio()} Vive o no Vive en: ${empleado1.mdireccion}`;
 
 document.write(mostrarDatos);
