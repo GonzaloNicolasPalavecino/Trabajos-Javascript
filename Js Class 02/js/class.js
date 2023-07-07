@@ -23,6 +23,6 @@ class CEmpleado {
 const empleado1 = new CEmpleado("John Doe", 2014, "5928 WallStreet");
 empleado1.viveEn();
 
-const mostrarDatos = `Años de antigüedad: ${empleado1.AñosdeServicio()} Vive o no Vive en: ${empleado1.mdireccion}`;
+const mostrarDatos = `Nombre del empleado: ${empleado1.nombre}<br>  Años de antigüedad: ${empleado1.AñosdeServicio()} <br> Vive o no Vive en: ${empleado1.mdireccion}`;
 
 document.write(mostrarDatos);
