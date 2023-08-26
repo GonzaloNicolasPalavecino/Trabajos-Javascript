@@ -60,10 +60,10 @@ mostrarResultadosButton.addEventListener('click', function() {
         const row = document.createElement('tr');
         row.innerHTML = `
            <td>${numero.valor}</td>
-          <td>${numero.esPrimo() ? 'Sí' : 'No'}</td>
-           <td>${numero.esPerfecto() ? 'Sí' : 'No'}</td>
-           <td>${numero.esPar() ? 'Sí' : 'No'}</td>
-           <td>${numero.esImpar() ? 'Sí' : 'No'}</td>
+          <td>${numero.esPrimo() ? 'Si' : 'No'}</td>
+           <td>${numero.esPerfecto() ? 'Si' : 'No'}</td>
+           <td>${numero.esPar() ? 'Si' : 'No'}</td>
+           <td>${numero.esImpar() ? 'Si' : 'No'}</td>
         `;
         tablaResultados.appendChild(row);
     });
