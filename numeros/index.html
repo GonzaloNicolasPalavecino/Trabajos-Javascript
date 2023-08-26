@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Verificar Números</title>
+</head>
+<body>
+    
+    <form id="formulario">
+        <label for="numero">Ingrese un numero:</label>
+        <input type="number" id="numero" required>
+        <input type="submit" value="Verificar">
+    </form>
+    <button id="mostrarResultados">Mostrar Resultados</button>
+
+    <div id="resultados">
+        <table>
+            <thead>
+             <tr>
+                <th>Numero</th>
+                <th>Primo</th>
+                 <th>Perfecto</th>
+                  <th>Par</th>
+                  <th>Impar</th>
+              </tr>
+          </thead>
+           <tbody id="tablaResultados"></tbody>
+        </table>
+    </div>
+
+    <script src="js/f.js"></script>
+</body>
+</html>
+
+
