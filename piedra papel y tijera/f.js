@@ -16,7 +16,7 @@ const servidor = http.createServer((envio, mostrar) => {
       const opcionUsuario = body.split('=')[1].toLowerCase();
       const opcionServidor = generarOpcionServidor();
 
-      const resultado = determinarResultado(opcionUsuario, opcionServidor);
+      const resultado = resultadoFinal(opcionUsuario, opcionServidor);
 
       mostrar.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
       mostrar.end(resultado);
@@ -30,20 +30,20 @@ servidor.listen(8888, () => {
 
 function generarOpcionServidor() {
   const opciones = ['piedra', 'papel', 'tijera'];
-  const indiceAleatorio = Math.floor(Math.random() * 3);
-  return opciones[indiceAleatorio];
+  const random = Math.floor(Math.random() * 3);
+  return opciones[random];
 }
 
-function determinarResultado(opcionUsuario, opcionServidor) {
+function resultadoFinal(opcionUsuario, opcionServidor) {
   if (opcionUsuario == opcionServidor) {
-    return `Tu eleccion: opcion=${opcionUsuario}\nLa computadora eligió: ${opcionServidor}\nEmpate :/`;
+    return `Elegiste: ${opcionUsuario}\nLa computadora eligio: ${opcionServidor}\nEmpate :/`;
   } else if (
     (opcionUsuario == 'piedra' && opcionServidor == 'tijera') ||
     (opcionUsuario == 'papel' && opcionServidor == 'piedra') ||
     (opcionUsuario == 'tijera' && opcionServidor == 'papel')
   ) {
-    return `Tu elección: ${opcionUsuario}\nLa computadora eligió: ${opcionServidor}\nGanaste :D`;
+    return `Elegiste: ${opcionUsuario}\nLa computadora eligio: ${opcionServidor}\nGanaste :D`;
   } else {
-    return `Tu elección: ${opcionUsuario}\nLa computadora eligió: ${opcionServidor}\nPerdiste :(`;
+    return `Elegiste: ${opcionUsuario}\nLa computadora eligio: ${opcionServidor}\nPerdiste :(`;
   }
 }
