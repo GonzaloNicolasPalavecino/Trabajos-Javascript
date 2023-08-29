@@ -10,14 +10,14 @@ function calcularModa(tamaño) {
 }
 
 function moda(vec) {
-let nrepes = 0, maxRepes = 0, moda = 0;
+let repes = 0, maxRepes = 0, moda = 0;
   vec.map(n1 => {
-  nrepes = 0;
+  repes = 0;
   vec.map(n2 => {
-    if (n1 == n2) { nrepes++ }
+    if (n1 == n2) { repes++ }
 })
-    if (nrepes > maxRepes) {
-      maxRepes = nrepes;
+    if (repes > maxRepes) {
+      maxRepes = repes;
       moda = n1;
 }
 })
