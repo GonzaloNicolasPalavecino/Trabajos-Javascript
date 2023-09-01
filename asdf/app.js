@@ -7,14 +7,14 @@ const options = ['piedra', 'papel', 'tijera'];
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    
+
     const userChoice = userChoiceInput.value.toLowerCase();
 
-    
+
     const computerChoice = options[Math.floor(Math.random() * 3)];
 
-    
-    resultText.innerHTML = `<br> Elegiste: ${userChoice}<br>La computadora eligió: ${computerChoice}<hr><br>${determineWinner(userChoice, computerChoice)}`;
+
+    resultText.innerHTML = `Elegiste: ${userChoice}<br>La computadora eligió: ${computerChoice}<br>${determineWinner(userChoice, computerChoice)}`;
 });
 
 function determineWinner(user, computer) {
