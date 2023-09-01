@@ -7,13 +7,13 @@ const options = ['piedra', 'papel', 'tijera'];
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Obtener la elección del usuario
+    
     const userChoice = userChoiceInput.value.toLowerCase();
 
-    // Generar una elección aleatoria para la computadora
+    
     const computerChoice = options[Math.floor(Math.random() * 3)];
 
-    // Mostrar las elecciones en la página con <br> para separarlas
+    
     resultText.innerHTML = `Elegiste: ${userChoice}<br>La computadora eligió: ${computerChoice}<br>${determineWinner(userChoice, computerChoice)}`;
 });
 
