@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
     const computerChoice = options[Math.floor(Math.random() * 3)];
 
     
-    resultText.innerHTML = `<br> Elegiste: ${userChoice}<br>La computadora eligió: ${computerChoice}<br>${determineWinner(userChoice, computerChoice)}`;
+    resultText.innerHTML = `Elegiste: ${userChoice}<br>La computadora eligio: ${computerChoice}<br>${determineWinner(userChoice, computerChoice)}`;
 });
 
 function determineWinner(user, computer) {
