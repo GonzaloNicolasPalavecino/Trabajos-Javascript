@@ -5,6 +5,9 @@ const servidor = http.createServer((envio, mostrar) => {
   if (envio.method == 'GET' && envio.url == '/') {
     mostrar.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     fs.createReadStream('index.html').pipe(mostrar);
+  } else if (envio.method == 'GET' && envio.url == '/f.js') {
+    mostrar.writeHead(200, { 'Content-Type': 'text/javascript; charset=utf-8' });
+    fs.createReadStream('f.js').pipe(mostrar);
   } else if (envio.method == 'POST' && envio.url == '/jugar') {
     let body = '';
 
