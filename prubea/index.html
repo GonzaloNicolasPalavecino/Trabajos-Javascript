@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p>Traductor de Español a Idioma P</p>
+        <form action="/traducir" method="post">
+        <label for="frase">Ingrese una frase en español:</label>
+        <input type="text" id="frase" name="frase" required>
+        <button type="button" onclick="traducirFrase()">Traducir</button>
+    </form>
+   <p> Resultado:</p>
+    <p id="resultado"></p>
+
+</body>
